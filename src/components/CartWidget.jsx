@@ -1,12 +1,12 @@
 import ItemListContainer from "./ItemListContainer";
 
 
-const cart = "https://cdn-icons-png.flaticon.com/512/1170/1170678.png";
+const cart = "./cart.svg";
 
 export default function CartWidget() {
   return (
     <div>
-      <img src={cart} alt="cart" />
+      <img src={cart} alt="cart" className="w-[50px] h-[50px]"/>
       <ItemListContainer greeting="5" />
     </div>
   );
